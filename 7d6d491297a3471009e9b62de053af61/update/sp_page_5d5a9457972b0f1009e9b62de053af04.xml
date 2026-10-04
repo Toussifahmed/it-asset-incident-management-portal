@@ -18,9 +18,9 @@
         <sys_id>5d5a9457972b0f1009e9b62de053af04</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>asset_requests</sys_name>
-        <sys_package display_value="   ITAssetPortal2" source="x_2238299_itasse_0">7d6d491297a3471009e9b62de053af61</sys_package>
+        <sys_package display_value="IT Asset &amp; Incident Management Portal" source="x_2238299_itasse_0">7d6d491297a3471009e9b62de053af61</sys_package>
         <sys_policy/>
-        <sys_scope display_value="   ITAssetPortal2">7d6d491297a3471009e9b62de053af61</sys_scope>
+        <sys_scope display_value="IT Asset &amp; Incident Management Portal">7d6d491297a3471009e9b62de053af61</sys_scope>
         <sys_update_name>sp_page_5d5a9457972b0f1009e9b62de053af04</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-09-30 17:07:22</sys_updated_on>

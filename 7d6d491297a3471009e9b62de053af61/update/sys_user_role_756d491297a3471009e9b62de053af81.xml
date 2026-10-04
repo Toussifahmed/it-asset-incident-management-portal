@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description>Default user role</description>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id/>
+        <federated_id>rsZm05aEWnexz5af6horcctz7oOmGgUQOIWuUcL7i7M=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_2238299_itasse_0.user</name>
@@ -16,9 +16,9 @@
         <sys_id>756d491297a3471009e9b62de053af81</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_2238299_itasse_0.user</sys_name>
-        <sys_package display_value="   ITAssetPortal2" source="x_2238299_itasse_0">7d6d491297a3471009e9b62de053af61</sys_package>
+        <sys_package display_value="IT Asset &amp; Incident Management Portal" source="x_2238299_itasse_0">7d6d491297a3471009e9b62de053af61</sys_package>
         <sys_policy/>
-        <sys_scope display_value="   ITAssetPortal2">7d6d491297a3471009e9b62de053af61</sys_scope>
+        <sys_scope display_value="IT Asset &amp; Incident Management Portal">7d6d491297a3471009e9b62de053af61</sys_scope>
         <sys_update_name>sys_user_role_756d491297a3471009e9b62de053af81</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-09-27 18:16:34</sys_updated_on>
