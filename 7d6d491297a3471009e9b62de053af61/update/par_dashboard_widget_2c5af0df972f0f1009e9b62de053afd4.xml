@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">d4b8341f972f0f1009e9b62de053afd1</canvas>
+        <component display_value="Pie">96abe7e38d8790718022c5630a92176c</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":false,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":false,"showPercentageOfTotalInTooltip":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Asset Request","sourceType":"table","tableOrViewName":"x_2238299_itasse_0_asset_request","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIyMzgyOTlfaXRhc3NlXzBfYXNzZXRfcmVxdWVzdDE3OTA3OTYyMjQxMjI=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Requests by Priority","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzIyMzgyOTlfaXRhc3NlXzBfYXNzZXRfcmVxdWVzdDE3OTA3OTYyMjQxMjI=","id":"ZEdGaWJHVjRYekl5TXpneU9UbGZhWFJoYzNObFh6QmZZWE56WlhSZmNtVnhkV1Z6ZERFM09UQTNPVFl5TWpReE1qST0xNzkwNzk2MjI4MjM1","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzIyMzgyOTlfaXRhc3NlXzBfYXNzZXRfcmVxdWVzdDE3OTA3OTYyMjQxMjI=","groupByField":"u_priority","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"j25bahbv","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","colors":{}}</component_props>
+        <h>26</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Asset Request","code":"PAR_DASHBOARD.d4b8341f972f0f1009e9b62de053afd1.2c5af0df972f0f1009e9b62de053afd4"},{"comment":"","message":"Requests by Priority","code":"PAR_DASHBOARD.d4b8341f972f0f1009e9b62de053afd1.2c5af0df972f0f1009e9b62de053afd4"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.d4b8341f972f0f1009e9b62de053afd1.2c5af0df972f0f1009e9b62de053afd4"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.d4b8341f972f0f1009e9b62de053afd1.2c5af0df972f0f1009e9b62de053afd4"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-30 19:27:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2c5af0df972f0f1009e9b62de053afd4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="IT Asset &amp; Incident Management Portal" source="x_2238299_itasse_0">7d6d491297a3471009e9b62de053af61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Asset &amp; Incident Management Portal">7d6d491297a3471009e9b62de053af61</sys_scope>
+        <sys_update_name>par_dashboard_widget_2c5af0df972f0f1009e9b62de053afd4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-30 19:30:04</sys_updated_on>
+        <visualization/>
+        <w>15</w>
+        <widget_props/>
+        <x>1</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>
