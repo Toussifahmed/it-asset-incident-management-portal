@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $window) {
+  var c = this;
+  c.tab = 'assets';
+
+  c.assetItem = '304edd6697e3c71009e9b62de053afb8';
+
+  // Opens the portal's standard "new incident" form (no sys_id needed)
+  c.incidentUrl = '?id=form&table=incident&sys_id=-1';
+
+  c.services = [
+    {icon:']]>💻<![CDATA[', title:'Request New Asset', desc:'Laptop, monitor & more', url:'?id=sc_cat_item&sys_id=' + c.assetItem},
+    {icon:']]>🛠<![CDATA[️', title:'Report Incident', desc:'Something is broken', url:c.incidentUrl},
+    {icon:']]>📚<![CDATA[', title:'Knowledge Base', desc:'Guides & FAQs', url:'?id=kb_home'},
+    {icon:']]>🛒<![CDATA[', title:'Service Catalog', desc:'Browse all services', url:'?id=sc_home'}
+  ];
+
+  c.go = function(url) { $window.location.href = url; };
+
+  c.greeting = function() {
+    var h = new Date().getHours();
+    return h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
+  };
+
+  c.badge = function(v) {
+    v = (v || '').toLowerCase();
+    if (/approved|fulfilled|resolved|closed complete/.test(v)) return 'ok';
+    if (/pending|new|in progress|requested|on hold/.test(v)) return 'wait';
+    if (/reject|cancel/.test(v)) return 'bad';
+    return '';
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.itp{display:grid;grid-template-columns:220px 1fr 300px;gap:20px;background:#f3f5f9;padding:0;font-family:"Segoe UI",Arial,sans-serif;color:#1f2a44;min-height:100vh}
+.itp .sidebar{background:#0f1b3d;color:#c9d2ec;padding:20px 0}
+.itp .logo{font-size:22px;font-weight:800;color:#fff;padding:0 20px 20px;line-height:1.2}
+.itp .logo span{color:#3ddc97}
+.itp .nav-item,.itp .nav-sub{display:block;cursor:pointer;color:#c9d2ec;text-decoration:none}
+.itp .nav-item{padding:10px 20px;margin:4px 10px;border-radius:8px}
+.itp .nav-item.active{background:#3a5bd9;color:#fff}
+.itp .nav-group{padding:14px 20px 4px;font-weight:600;color:#fff;font-size:14px}
+.itp .nav-sub{padding:6px 20px 6px 34px;font-size:13px}
+.itp .nav-sub:hover,.itp .nav-item:hover{color:#fff}
+.itp .main{padding:20px 0}
+
+.itp .hero{background:linear-gradient(135deg,#e3e6ff,#d9e4fb);border-radius:14px;padding:28px;margin-bottom:16px}
+.itp .hero h2{margin:0 0 6px;font-weight:700}
+.itp .hero-search input{width:70%;padding:12px 14px;border:1px solid #cfd6ea;border-radius:8px;margin-top:10px}
+.itp .card{background:#fff;border-radius:12px;padding:16px 18px;margin-bottom:16px;box-shadow:0 1px 4px rgba(20,30,60,.08)}
+.itp .card-head{display:flex;justify-content:space-between;align-items:center}
+.itp .card-head h4,.itp .card h4{margin:0 0 10px;font-weight:700}
+.itp .card-head a{color:#3a5bd9;font-size:13px;cursor:pointer}
+.itp .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.itp .svc{border:1px solid #e6eaf3;border-radius:10px;padding:12px;display:flex;gap:10px;align-items:center;cursor:pointer}
+.itp .svc:hover{background:#f5f7ff;border-color:#3a5bd9}
+.itp .svc-icon{font-size:24px;background:#eef1ff;border-radius:8px;width:42px;height:42px;display:flex;align-items:center;justify-content:center}
+.itp .svc small{color:#6b7794}
+.itp .tabs{border-bottom:1px solid #e6eaf3;margin-bottom:8px}
+.itp .tabs a{display:inline-block;padding:8px 14px;cursor:pointer;color:#6b7794;text-decoration:none}
+.itp .tabs a.active{color:#3a5bd9;border-bottom:2px solid #3a5bd9;font-weight:600}
+.itp table{width:100%;font-size:13px;border-collapse:collapse}
+.itp th{color:#6b7794;font-weight:600;text-align:left;padding:8px}
+.itp td{padding:10px 8px;border-top:1px solid #eef1f7}
+.itp .empty{text-align:center;color:#8a94ad;padding:14px}
+.itp .badge{padding:3px 10px;border-radius:6px;font-size:12px;background:#e9ecf3;color:#444}
+.itp .badge.ok{background:#d9f5e5;color:#157347}
+.itp .badge.wait{background:#fff0d6;color:#b26a00}
+.itp .badge.bad{background:#fde0e0;color:#b02a37}
+.itp .right{padding:20px 20px 20px 0}
+.itp .task{padding:8px 0;border-bottom:1px dashed #e6eaf3;font-size:13px}
+.itp .task small{color:#6b7794}
+.itp button{padding:8px 14px;border-radius:8px;cursor:pointer;margin-right:6px;font-size:13px}
+.itp .btn-outline{background:#fff;border:1px solid #3a5bd9;color:#3a5bd9}
+.itp .btn-solid{background:#3a5bd9;border:1px solid #3a5bd9;color:#fff}
+@media(max-width:1100px){.itp{grid-template-columns:1fr}.itp .svc-grid{grid-template-columns:repeat(2,1fr)}.itp .sidebar{display:none}.itp .right{padding:0 16px}}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>it_portal_home</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>IT Portal Home</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  var userId = gs.getUserID();
+
+  // User name
+  var u = new GlideRecord('sys_user');
+  u.get(userId);
+  data.name = u.first_name.toString() || 'there';
+
+  // Asset requests
+  data.assetRequests = [];
+  var a = new GlideRecord('x_2238299_itasse_0_asset_request');
+  a.addQuery('u_requester', userId);
+  a.orderByDesc('sys_created_on');
+  a.setLimit(10);
+  a.query();
+  while (a.next()) {
+    data.assetRequests.push({
+      item: a.u_requested_item.toString(),
+      priority: a.u_priority.getDisplayValue(),
+      approval: a.u_approval_status.getDisplayValue(),
+      state: a.u_state.getDisplayValue(),
+      date: a.sys_created_on.getDisplayValue()
+    });
+  }
+
+  // Incidents
+  data.incidents = [];
+  var i = new GlideRecord('incident');
+  i.addQuery('caller_id', userId);
+  i.orderByDesc('sys_created_on');
+  i.setLimit(10);
+  i.query();
+  while (i.next()) {
+    data.incidents.push({
+      number: i.number.toString(),
+      desc: i.short_description.toString(),
+      state: i.state.getDisplayValue(),
+      date: i.sys_created_on.getDisplayValue()
+    });
+  }
+
+  // Approvals waiting for me
+  data.approvals = [];
+  var p = new GlideRecord('sysapproval_approver');
+  p.addQuery('approver', userId);
+  p.addQuery('state', 'requested');
+  p.query();
+  while (p.next()) {
+    data.approvals.push({
+      what: p.document_id.getDisplayValue(),
+      date: p.sys_created_on.getDisplayValue()
+    });
+  }
+
+  // Announcements (latest published knowledge articles)
+  data.news = [];
+  var k = new GlideRecord('kb_knowledge');
+  k.addQuery('workflow_state', 'published');
+  k.orderByDesc('sys_created_on');
+  k.setLimit(3);
+  k.query();
+  while (k.next()) {
+    data.news.push({
+      title: k.short_description.toString(),
+      date: k.sys_created_on.getDisplayValue()
+    });
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-30 18:31:45</sys_created_on>
+        <sys_id>e1ada85797eb0f1009e9b62de053af5a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>IT Portal Home</sys_name>
+        <sys_package display_value="   ITAssetPortal2" source="x_2238299_itasse_0">7d6d491297a3471009e9b62de053af61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="   ITAssetPortal2">7d6d491297a3471009e9b62de053af61</sys_scope>
+        <sys_update_name>sp_widget_e1ada85797eb0f1009e9b62de053af5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-30 18:57:17</sys_updated_on>
+        <template><![CDATA[<div class="itp">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">Asset <span>Request</span></div>
+    <a class="nav-item" ng-class="{active:c.tab=='assets'}" ng-click="c.tab='assets'">]]>🏠<![CDATA[ Home</a>
+    <div class="nav-group">My Requests</div>
+    <a class="nav-sub" ng-click="c.tab='assets'">Asset Requests</a>
+    <a class="nav-sub" ng-click="c.tab='inc'">Incidents</a>
+    <a class="nav-sub" ng-click="c.tab='appr'">My Approvals</a>
+    <div class="nav-group">IT Services</div>
+    <a class="nav-sub" ng-click="c.go('?id=sc_cat_item&sys_id=' + c.assetItem)">Request New Asset</a>
+    <a class="nav-sub" ng-click="c.go(c.incidentUrl)">Report Incident</a>
+    <a class="nav-sub" ng-click="c.go('?id=sc_home')">Service Catalog</a>
+    <div class="nav-group">Knowledge</div>
+    <a class="nav-sub" ng-click="c.go('?id=kb_home')">Articles &amp; FAQs</a>
+    <a class="nav-item" ng-click="c.go('?id=user_profile')">]]>👤<![CDATA[ My Profile</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="hero">
+      <h2>{{c.greeting()}}, {{data.name}} ]]>👋<![CDATA[</h2>
+      <p>How can we help you today?</p>
+      <div class="hero-search">
+        <input type="text" ng-model="c.q2" ng-keyup="$event.keyCode==13 && c.go('?id=search&q=' + c.q2)"
+               placeholder="Search IT services, policies, or ask a question...">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h4>Popular IT Services</h4><a ng-click="c.go('?id=sc_home')">View all services</a></div>
+      <div class="svc-grid">
+        <div class="svc" ng-repeat="s in c.services" ng-click="c.go(s.url)">
+          <div class="svc-icon">{{s.icon}}</div>
+          <div><b>{{s.title}}</b><br><small>{{s.desc}}</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h4>My Requests</h4><a ng-click="c.tab='assets'">View all requests</a></div>
+      <div class="tabs">
+        <a ng-class="{active:c.tab=='assets'}" ng-click="c.tab='assets'">Asset Requests</a>
+        <a ng-class="{active:c.tab=='inc'}" ng-click="c.tab='inc'">Incidents</a>
+        <a ng-class="{active:c.tab=='appr'}" ng-click="c.tab='appr'">My Approvals ({{data.approvals.length}})</a>
+      </div>
+
+      <table ng-if="c.tab=='assets'">
+        <tr><th>Item</th><th>Priority</th><th>Approval</th><th>State</th><th>Requested On</th></tr>
+        <tr ng-repeat="r in data.assetRequests">
+          <td>{{r.item}}</td><td>{{r.priority}}</td>
+          <td><span class="badge" ng-class="c.badge(r.approval)">{{r.approval}}</span></td>
+          <td><span class="badge" ng-class="c.badge(r.state)">{{r.state}}</span></td>
+          <td>{{r.date}}</td>
+        </tr>
+        <tr ng-if="!data.assetRequests.length"><td colspan="5" class="empty">No asset requests yet.</td></tr>
+      </table>
+
+      <table ng-if="c.tab=='inc'">
+        <tr><th>Number</th><th>Description</th><th>State</th><th>Opened</th></tr>
+        <tr ng-repeat="r in data.incidents">
+          <td>{{r.number}}</td><td>{{r.desc}}</td>
+          <td><span class="badge" ng-class="c.badge(r.state)">{{r.state}}</span></td><td>{{r.date}}</td>
+        </tr>
+        <tr ng-if="!data.incidents.length"><td colspan="4" class="empty">No incidents found.</td></tr>
+      </table>
+
+      <table ng-if="c.tab=='appr'">
+        <tr><th>Waiting for my approval</th><th>Since</th></tr>
+        <tr ng-repeat="r in data.approvals"><td>{{r.what}}</td><td>{{r.date}}</td></tr>
+        <tr ng-if="!data.approvals.length"><td colspan="2" class="empty">Nothing waiting for you.</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <!-- RIGHT COLUMN -->
+  <aside class="right">
+    <div class="card">
+      <div class="card-head"><h4>My Tasks</h4><a ng-click="c.tab='appr'">View all</a></div>
+      <div class="task" ng-repeat="t in data.approvals | limitTo:4">
+        <b>Approve: {{t.what}}</b><br><small>Since {{t.date}}</small>
+      </div>
+      <div class="task" ng-repeat="t in data.incidents | limitTo:2">
+        <b>{{t.number}}</b> {{t.desc}}<br><small>{{t.state}}</small>
+      </div>
+      <div class="empty" ng-if="!data.approvals.length && !data.incidents.length">No tasks. ]]>🎉<![CDATA[</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h4>Announcements</h4><a ng-click="c.go('?id=kb_home')">View all</a></div>
+      <div class="task" ng-repeat="n in data.news">
+        <b>]]>📢<![CDATA[ {{n.title}}</b><br><small>{{n.date}}</small>
+      </div>
+      <div class="empty" ng-if="!data.news.length">No announcements.</div>
+    </div>
+
+    <div class="card">
+      <h4>Need Help?</h4>
+      <p><small>Raise an incident or browse knowledge articles.</small></p>
+      <button class="btn-outline" ng-click="c.go('?id=kb_home')">Knowledge Base</button>
+      <button class="btn-solid" ng-click="c.go(c.incidentUrl)">Report Incident</button>
+    </div>
+  </aside>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e1ada85797eb0f1009e9b62de053af5a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-30 18:31:45</sys_created_on>
+        <sys_id>69ada85797eb0f1009e9b62de053af5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-30 18:31:45</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_2238299_itasse_0.asset.request.fulfill</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>asset.request.fulfilled</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-03 18:55:17</sys_created_on>
+        <sys_id>cc9f8c5497f7075009e9b62de053af52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2238299_itasse_0.asset.request.fulfill</sys_name>
+        <sys_package display_value="   ITAssetPortal2" source="x_2238299_itasse_0">7d6d491297a3471009e9b62de053af61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="   ITAssetPortal2">7d6d491297a3471009e9b62de053af61</sys_scope>
+        <sys_update_name>sysevent_register_cc9f8c5497f7075009e9b62de053af52</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 18:55:17</sys_updated_on>
+        <table>x_2238299_itasse_0_asset_request</table>
+    </sysevent_register>
+</record_update>
